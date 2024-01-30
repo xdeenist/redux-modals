@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - 10
+env:
+  matrix:
+  - JOB_TYPE=test
+  - JOB_TYPE=build
+script:
+  - npm run $JOB_TYPE
