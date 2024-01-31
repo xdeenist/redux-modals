@@ -1,3 +1,4 @@
+.DS_Store
 /lib
 /es
 node_modules
@@ -6,3 +7,4 @@ yarn.lock
 yarn-error.log
 .vscode
 coverage
+package-lock.json
