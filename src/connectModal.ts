@@ -10,8 +10,7 @@ import {
   ConnectModalState,
   ConnectModalProps,
 } from './interface';
-
-const hoistStatics = require('hoist-non-react-statics');
+import hoistStatics from 'hoist-non-react-statics'
 
 const INITIAL_MODAL_STATE = {};
 

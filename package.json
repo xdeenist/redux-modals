@@ -1,6 +1,6 @@
 {
   "name": "@xdeenist/redux-modals",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Redux based modal",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -72,7 +72,7 @@
     "typescript": "^3.2.2"
   },
   "dependencies": {
-    "hoist-non-react-statics": "^3.0.0",
+    "hoist-non-react-statics": "^3.3.2",
     "prop-types": "^15.5.10"
   },
   "peerDependencies": {
