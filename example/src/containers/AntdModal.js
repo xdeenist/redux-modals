@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { Modal } from 'antd'
-import { connectModal } from 'redux-modal'
+import { connectModal } from '@xdeenist/redux-modals'
 
 class AntdModal extends Component {
   static propTypes = {

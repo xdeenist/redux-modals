@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
-import { show } from 'redux-modal'
+import { show } from '@xdeenist/redux-modals'
 import { Button } from 'react-bootstrap'
 import BootstrapModal from './BootstrapModal'
 import { Button as AntdButton } from 'antd'

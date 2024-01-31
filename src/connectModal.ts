@@ -10,7 +10,8 @@ import {
   ConnectModalState,
   ConnectModalProps,
 } from './interface';
-import hoistStatics from 'hoist-non-react-statics'
+// @ts-ignore
+import { hoistNonReactStatics as hoistStatics} from 'hoist-non-react-statics';
 
 const INITIAL_MODAL_STATE = {};
 
@@ -20,6 +21,7 @@ export default function connectModal({
   resolve,
   destroyOnHide = true,
 }: ModalConfig): InjectedWrapperComponent {
+  // @ts-ignore
   return WrappedComponent => {
     class ConnectModal extends React.Component<
       ConnectModalProps,
