@@ -1,6 +1,6 @@
 {
   "name": "@xdeenist/redux-modals",
-  "version": "0.0.5",
+  "version": "0.0.10",
   "description": "Redux based modal",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -17,7 +17,6 @@
     "build": "npm run build:lib && npm run build:es",
     "build:lib": "tsc",
     "build:es": "tsc --module es6 --outDir es",
-    "prepublishOnly": "npm test && npm run build",
     "release": "npm publish --access=public",
     "rebuild": "npm run clean && npm run build"
   },
@@ -64,7 +63,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "hoist-non-react-statics": "^3.3.1",
+    "@types/hoist-non-react-statics": "^3.3.5",
+    "hoist-non-react-statics": "^3.3.2",
     "prop-types": "^15.8.1"
   },
   "peerDependencies": {

@@ -10,8 +10,8 @@ import {
   ConnectModalState,
   ConnectModalProps,
 } from './interface';
-// @ts-ignore
-import { hoistNonReactStatics as hoistStatics} from 'hoist-non-react-statics';
+
+import hoistNonReactStatics from 'hoist-non-react-statics'
 
 const INITIAL_MODAL_STATE = {};
 
@@ -114,6 +114,6 @@ export default function connectModal({
         modal: getModalState(state)[name] || INITIAL_MODAL_STATE,
       }),
       dispatch => ({ ...bindActionCreators({ hide, destroy }, dispatch) })
-    )(hoistStatics(ConnectModal, WrappedComponent));
+    )(hoistNonReactStatics(ConnectModal, WrappedComponent));
   };
 }
