@@ -1,6 +1,6 @@
-# Redux Modal
+# Redux Modal for React 18
 
-`redux-modal` connect your modal to the redux store, and let you control your modal by simply dispatching actions.
+`redux-modals` for React 18 connect your modal to the redux store, and let you control your modal by simply dispatching actions.
 
 It works with any react based modal component.
 
